@@ -14,6 +14,6 @@ For more details on the project, see [Hackaday Page](https://hackaday.io/project
 `Firmware/` - Firmware source code.
 
 ## License
-The hardware portion of the project (everything under `Hardware/` and `Fabrication/`) is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+The hardware portion of the project (under `Hardware/` and `Fabrication/`) is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-The firmware portion of the project (everything under `Firmware/`, with exceptions, see below) is licensed under the [3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause).
+The firmware portion of the project (under `Firmware/`, with exceptions, see individual file header) is licensed under the [3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause).
