@@ -5277,12 +5277,6 @@ F 3 "" H 19200 2150 50  0001 C CNN
 	1    19200 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 18600 2800 0    50   Input ~ 0
-3V3_SR_SHIFT
-Text GLabel 18600 2900 0    50   Input ~ 0
-3V3_SR_LATCH
-Text GLabel 18600 2700 0    50   Input ~ 0
-3V3_SR_DATA
 Text GLabel 18600 3000 0    50   Input ~ 0
 3V3_DAC_SCK
 Text GLabel 18600 3100 0    50   Input ~ 0
@@ -5806,31 +5800,18 @@ Text GLabel 16050 9400 0    50   Input ~ 0
 MCU_JTMS
 Text GLabel 16050 7900 0    50   Input ~ 0
 MCU_nRST
-$Comp
-L Nixie-Controller-v2:STM32F103C8 U12
-U 1 1 6163BD96
-P 17050 8850
-F 0 "U12" H 17050 8900 50  0000 C CNN
-F 1 "STM32F103C8" H 17050 8800 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 17050 8900 50  0001 C CNN
-F 3 "~" H 17050 8900 50  0001 C CNN
-F 4 "ST Micro" H 17050 8850 50  0001 C CNN "Manufacturer"
-F 5 "STM32F103C8T6" H 17050 8850 50  0001 C CNN "Part#"
-	1    17050 8850
-	1    0    0    -1  
-$EndComp
 Text GLabel 16050 8500 0    50   Input ~ 0
 3V3_DAC_nCS
 Text GLabel 16050 8800 0    50   Input ~ 0
 3V3_DAC_MOSI
 Text GLabel 16050 8600 0    50   Input ~ 0
 3V3_DAC_SCK
-Text GLabel 18050 8300 2    50   Input ~ 0
-3V3_SR_DATA
-Text GLabel 18050 8100 2    50   Input ~ 0
-3V3_SR_LATCH
-Text GLabel 18050 8200 2    50   Input ~ 0
-3V3_SR_SHIFT
+Text GLabel 18050 9600 2    50   Input ~ 0
+3V3_SR_MOSI
+Text GLabel 18050 9300 2    50   Input ~ 0
+3V3_SR_nCS
+Text GLabel 18050 9400 2    50   Input ~ 0
+3V3_SR_SCK
 Text GLabel 18050 9100 2    50   Input ~ 0
 HV_SHDN
 Text Notes 21350 11400 2    197  ~ 39
@@ -6285,10 +6266,7 @@ NoConn ~ 16050 9300
 NoConn ~ 16050 9750
 NoConn ~ 16050 9850
 NoConn ~ 16050 9950
-NoConn ~ 18050 9600
 NoConn ~ 18050 9500
-NoConn ~ 18050 9400
-NoConn ~ 18050 9300
 NoConn ~ 18050 9000
 NoConn ~ 18050 8900
 NoConn ~ 18050 8600
@@ -7112,4 +7090,26 @@ F 5 "MMBTA42" H 13600 22050 50  0001 C CNN "Part#"
 	1    13600 22050
 	1    0    0    -1  
 $EndComp
+Text GLabel 18600 2700 0    50   Input ~ 0
+3V3_SR_MOSI
+Text GLabel 18600 2900 0    50   Input ~ 0
+3V3_SR_nCS
+Text GLabel 18600 2800 0    50   Input ~ 0
+3V3_SR_SCK
+$Comp
+L Nixie-Controller-v2:STM32F103C8 U12
+U 1 1 6163BD96
+P 17050 8850
+F 0 "U12" H 17050 8900 50  0000 C CNN
+F 1 "STM32F103C8" H 17050 8800 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 17050 8900 50  0001 C CNN
+F 3 "~" H 17050 8900 50  0001 C CNN
+F 4 "ST Micro" H 17050 8850 50  0001 C CNN "Manufacturer"
+F 5 "STM32F103C8T6" H 17050 8850 50  0001 C CNN "Part#"
+	1    17050 8850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 18050 8100
+NoConn ~ 18050 8200
+NoConn ~ 18050 8300
 $EndSCHEMATC
