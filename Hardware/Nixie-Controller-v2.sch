@@ -7268,4 +7268,6 @@ Text GLabel 16050 8400 0    50   Input ~ 0
 ESP_RX
 Text GLabel 16050 8200 0    50   Input ~ 0
 ESP_RUN
+Text Notes 32600 11400 2    197  ~ 39
+WIFI
 $EndSCHEMATC
