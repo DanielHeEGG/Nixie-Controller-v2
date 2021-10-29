@@ -58,6 +58,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ESP_nRST_Pin GPIO_PIN_0
+#define ESP_nRST_GPIO_Port GPIOA
+#define ESP_RUN_Pin GPIO_PIN_1
+#define ESP_RUN_GPIO_Port GPIOA
+#define ESP_TX_Pin GPIO_PIN_2
+#define ESP_TX_GPIO_Port GPIOA
+#define ESP_RX_Pin GPIO_PIN_3
+#define ESP_RX_GPIO_Port GPIOA
 #define DAC_nCS_Pin GPIO_PIN_4
 #define DAC_nCS_GPIO_Port GPIOA
 #define DAC_SCK_Pin GPIO_PIN_5
