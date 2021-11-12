@@ -74,8 +74,6 @@ void Error_Handler(void);
 #define DAC_MOSI_GPIO_Port GPIOA
 #define HV_SHDN_Pin GPIO_PIN_10
 #define HV_SHDN_GPIO_Port GPIOB
-#define LED_Pin GPIO_PIN_11
-#define LED_GPIO_Port GPIOB
 #define SR_nCS_Pin GPIO_PIN_12
 #define SR_nCS_GPIO_Port GPIOB
 #define SR_SCK_Pin GPIO_PIN_13
