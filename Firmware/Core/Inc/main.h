@@ -72,10 +72,10 @@ void Error_Handler(void);
 #define DAC_SCK_GPIO_Port GPIOA
 #define DAC_MOSI_Pin GPIO_PIN_7
 #define DAC_MOSI_GPIO_Port GPIOA
+#define JMP_nRST_Pin GPIO_PIN_0
+#define JMP_nRST_GPIO_Port GPIOB
 #define HV_SHDN_Pin GPIO_PIN_10
 #define HV_SHDN_GPIO_Port GPIOB
-#define LED_Pin GPIO_PIN_11
-#define LED_GPIO_Port GPIOB
 #define SR_nCS_Pin GPIO_PIN_12
 #define SR_nCS_GPIO_Port GPIOB
 #define SR_SCK_Pin GPIO_PIN_13
@@ -95,7 +95,9 @@ void Error_Handler(void);
 #define RTC_SDA_Pin GPIO_PIN_7
 #define RTC_SDA_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
-
+#define RTC_I2C hi2c1
+#define DAC_SPI hspi1
+#define SR_SPI hspi2
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
