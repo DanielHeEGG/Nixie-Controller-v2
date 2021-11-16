@@ -7064,9 +7064,9 @@ NoConn ~ 18050 8200
 NoConn ~ 18050 8300
 Text GLabel 29350 7850 0    50   Input ~ 0
 ESP_nRST
-Text GLabel 31250 8050 2    50   Input ~ 0
+Text GLabel 31250 8750 2    50   Input ~ 0
 ESP_TX
-Text GLabel 31250 7950 2    50   Input ~ 0
+Text GLabel 31250 8650 2    50   Input ~ 0
 ESP_RX
 Text GLabel 31250 8950 2    50   Input ~ 0
 ESP_RUN
@@ -7131,10 +7131,6 @@ F 3 "" H 29600 6700 50  0001 C CNN
 	1    29600 6700
 	1    0    0    -1  
 $EndComp
-Text GLabel 30900 6750 0    50   Input ~ 0
-ESP_TX
-Text GLabel 30900 6500 0    50   Input ~ 0
-ESP_RX
 Text GLabel 16050 8100 0    50   Input ~ 0
 ESP_nRST
 Wire Notes Line width 20
@@ -7244,8 +7240,6 @@ NoConn ~ 29950 9200
 NoConn ~ 30650 9200
 NoConn ~ 30750 9200
 NoConn ~ 31250 8850
-NoConn ~ 31250 8750
-NoConn ~ 31250 8650
 NoConn ~ 31250 8550
 NoConn ~ 31250 8450
 NoConn ~ 31250 8350
@@ -7286,4 +7280,12 @@ F 3 "" H 30900 7000 50  0001 C CNN
 	1    30900 7000
 	1    0    0    -1  
 $EndComp
+Text GLabel 30900 6750 0    50   Input ~ 0
+ESP_LOG_RX
+Text GLabel 30900 6500 0    50   Input ~ 0
+ESP_LOG_TX
+Text GLabel 31250 8050 2    50   Input ~ 0
+ESP_LOG_RX
+Text GLabel 31250 7950 2    50   Input ~ 0
+ESP_LOG_TX
 $EndSCHEMATC
